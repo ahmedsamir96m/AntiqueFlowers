@@ -1,0 +1,220 @@
+@import 'utlities';
+@import 'buttons';
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: $segoeUI; 
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#main-header {
+	background-image: url('/src/imgs/home-bg.jpg');   
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 105vh; 
+
+	.main-nav {
+		background-color: #fff;
+		max-width: 100%;
+		position: relative;
+		padding: 20px 100px;
+
+		.logo {
+			font-family: $aboutLove;
+			display: inline-block;
+			position: relative;
+			bottom: 10px;
+
+			.logo-text {
+				font-size: 50px;
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+			.logo-subtext {
+				font-family: "Segoe UI";
+				font-size: 12px;
+				text-transform: uppercase;
+				letter-spacing: 7px;
+				position: absolute;
+				bottom: -8px;
+			}
+			.sub-right {
+				left: 75px;
+			}
+			.sub-left {
+				left: 12px;
+			}
+		}
+
+		ul {
+			display: inline-block;
+
+			li {
+				display: inline-block;
+			}
+			
+		}
+
+		.nav-links {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.nav-item {
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 6px;
+				padding: 0px 10px;
+
+				a {
+					transition: 0.3s all;
+					
+					&:hover {
+						color: $primaryColor;
+					}
+				}
+				.active {
+					color: $primaryColor;
+				}
+			}
+		}
+
+		.nav-functions {
+			position: absolute;
+			top: 50%;
+			right: 6%;
+			transform: translate(-50%, -50%);
+
+			.shopping-cart {
+				margin-left: 40px;
+
+				&:before {
+					content: '';
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					background-color: $primaryColor;
+					display: block;
+					position: absolute;
+					right: -5px;
+					top: -5px;
+				}
+			}
+
+			img {
+				width: 24px;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+
+	#main-section {
+		max-width: 100%;
+    width: 550px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+		
+		.main-section_title {
+			margin-bottom: 35px;
+			font-family: "About Love";
+			text-transform: initial;
+			font-weight: 400;
+			font-size: 56px;
+			letter-spacing: 3px;
+		}
+
+		.main-section_sub-title {
+			padding-top: 35px;
+			display: inline-block;
+			font-family: "Segoe UI";
+			font-size: 37px;
+		}
+	}
+
+}
+
+#about {
+	padding: 150px 0px;
+
+	.container-flex {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.about-item {
+			flex-basis: 200px;
+			position: relative;
+			height: 200px;
+			margin: 0px 5px;
+			padding: 10px;
+			text-align: center;
+			transition: 0.3s all;
+			&:hover {
+				box-shadow: 0px 2px 19px 1px $secondaryColor;
+			}
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 25px;
+				left: 65px;
+				width: 85px;
+				height: 85px;
+				background-color: lighten($primaryColor, 10%);
+				border-radius: 50%;
+			}
+			img {
+				position: relative;
+			}
+
+			p {
+				padding-top: 20px;
+				font-family: serif;
+				letter-spacing: 3px;
+				line-height: 1.5;
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

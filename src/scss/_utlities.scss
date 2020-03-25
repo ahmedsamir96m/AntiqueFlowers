@@ -1,0 +1,66 @@
+/* Colors */
+$primaryColor: #ee6868;
+$secondaryColor: #3a2511;
+
+.color-primary {
+  color: $primaryColor;
+}
+.color-primary-light {
+  color: lighten($primaryColor, 10%);
+}
+.color-secondary {
+  color: $secondaryColor;
+}
+.color-secondary-light {
+  color: lighten($secondaryColor, 10%);
+}
+
+
+/* Fonts */
+$aboutLove: "About Love";
+$segoeUI: "Segoe UI";
+
+.font-about {
+  font-family: $aboutLove;
+}
+.font-segoe {
+  font-family: $segoeUI;
+}
+.font-serif {
+  font-family: serif;
+}
+.font-heading {
+  font-size: 36px;
+}
+.font-sub-heading {
+  font-size: 30px;
+}
+.font-normal {
+  font-size: 18px;
+}
+.font-sub-normal {
+  font-size: 16px;
+}
+
+/* Text */
+.text-initial {
+  text-transform: initial;
+}
+
+
+/* Align */
+.align-center {
+  text-align: center;
+}
+
+
+/* Margins & Paddings */
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+
+.service-icon-size {
+  width: 107px;
+  height: 107px;
+}

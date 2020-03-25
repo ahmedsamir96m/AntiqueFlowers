@@ -1,0 +1,12 @@
+.btn {
+  font-size: 22px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  font-weight: 500;
+  padding: 15px 30px;
+  background-color: $primaryColor;
+}
