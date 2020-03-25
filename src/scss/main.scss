@@ -1,5 +1,6 @@
 @import 'utlities';
 @import 'buttons';
+@import 'config';
 
 
 * {
@@ -136,34 +137,34 @@ a {
     left: 15%;
 		
 		.main-section_title {
-			margin-bottom: 35px;
-			font-family: "About Love";
+			margin-bottom: 25px;
+			font-family: "Happyland Regular";
 			text-transform: initial;
 			font-weight: 400;
-			font-size: 56px;
-			letter-spacing: 3px;
+			font-size: 26px;
 		}
 
 		.main-section_sub-title {
-			padding-top: 35px;
+			padding-top: 25px;
 			display: inline-block;
 			font-family: "Segoe UI";
-			font-size: 37px;
+			font-size: 36px;
 		}
 	}
 
 }
 
-#about {
-	padding: 150px 0px;
 
+
+
+#about {
 	.container-flex {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		.about-item {
-			flex-basis: 200px;
+			flex-basis: 250px;
 			position: relative;
 			height: 200px;
 			margin: 0px 5px;
@@ -178,7 +179,7 @@ a {
 				display: block;
 				position: absolute;
 				top: 25px;
-				left: 65px;
+				left: 92px;
 				width: 85px;
 				height: 85px;
 				background-color: lighten($primaryColor, 10%);
@@ -190,10 +191,12 @@ a {
 
 			p {
 				padding-top: 20px;
-				font-family: serif;
-				letter-spacing: 3px;
+				letter-spacing: 4px;
 				line-height: 1.5;
-				font-size: 22px;
+				font-size: 24px;
+				font-family: "Merriweather";
+				font-weight: 700;
+				text-transform: capitalize;
 			}
 		}
 	}
@@ -201,6 +204,47 @@ a {
 
 
 
+#packages {
+	.tags-list {
+		.tag {
+			display: inline-block;
+			font-size: 16px;
+			font-weight: 500;
+			padding: 1rem 2rem;
+			border-radius: 2rem;
+			letter-spacing: 2px;
+			cursor: pointer;	
+		}
+		.active {
+			background-color: lighten($primaryColor, 10%);
+		}
+	}
+
+	.bouquets {
+		display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 35px;
+    text-align: center;
+    margin: auto;
+		width: 1200px;
+		
+		.bouquet {
+			width: 300px;
+			margin: auto;
+			background-color: #eee;
+   		color: $secondaryColor;
+
+			.bouquet-img {
+				width: 100%;
+			}
+			.bouquet-description {
+				font-size: 20px;
+				font-weight: bold;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
 
 
 

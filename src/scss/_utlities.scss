@@ -1,7 +1,54 @@
-/* Colors */
-$primaryColor: #ee6868;
-$secondaryColor: #3a2511;
+@import "config";
+/* margins & paddings */
+$spaceamounts: (1, 2, 3, 4, 5, 6);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
 
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+}
+
+
+/* Colors */
 .color-primary {
   color: $primaryColor;
 }
@@ -17,30 +64,50 @@ $secondaryColor: #3a2511;
 
 
 /* Fonts */
-$aboutLove: "About Love";
-$segoeUI: "Segoe UI";
-
 .font-about {
   font-family: $aboutLove;
 }
 .font-segoe {
   font-family: $segoeUI;
 }
-.font-serif {
-  font-family: serif;
+.font-happyland {
+  font-family: $happyLand;
+}
+.font-merriweater {
+  font-family: $Merriweather;
 }
 .font-heading {
   font-size: 36px;
+  padding-bottom: 16px;
 }
 .font-sub-heading {
-  font-size: 30px;
+  font-size: 32px;
 }
 .font-normal {
   font-size: 18px;
 }
+.font-up-normal {
+  font-size: 24px;
+}
+.font-normal-plus {
+  font-size: 28px;
+}
 .font-sub-normal {
   font-size: 16px;
 }
+
+
+/* font-style */
+.font-italic {
+  font-style: italic;
+}
+
+
+/* letter spacing */ 
+.letter-space-5 {
+  letter-spacing: 5px;
+}
+
 
 /* Text */
 .text-initial {
@@ -54,9 +121,9 @@ $segoeUI: "Segoe UI";
 }
 
 
-/* Margins & Paddings */
-.mb-5 {
-  margin-bottom: 5rem;
+/* section spacing */
+.section-padding {
+  padding: 150px 0px;
 }
 
 
