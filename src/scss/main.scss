@@ -49,6 +49,10 @@ a {
 			.logo-subtext {
 				font-family: "Segoe UI";
 				font-size: 12px;
+<<<<<<< HEAD
+=======
+				font-weight: 500;
+>>>>>>> packages section added
 				text-transform: uppercase;
 				letter-spacing: 7px;
 				position: absolute;
@@ -72,6 +76,10 @@ a {
 		}
 
 		.nav-links {
+<<<<<<< HEAD
+=======
+			width: 100%;
+>>>>>>> packages section added
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -99,7 +107,11 @@ a {
 		.nav-functions {
 			position: absolute;
 			top: 50%;
+<<<<<<< HEAD
 			right: 6%;
+=======
+			right: 0%;
+>>>>>>> packages section added
 			transform: translate(-50%, -50%);
 
 			.shopping-cart {
@@ -213,26 +225,48 @@ a {
 			padding: 1rem 2rem;
 			border-radius: 2rem;
 			letter-spacing: 2px;
+<<<<<<< HEAD
 			cursor: pointer;	
 		}
 		.active {
 			background-color: lighten($primaryColor, 10%);
+=======
+			transition: 0.3s;
+			cursor: pointer;	
+		}
+		.active {
+			background-color: $primaryColor;
+>>>>>>> packages section added
 		}
 	}
 
 	.bouquets {
 		display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 35px;
+=======
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-columns: 300px;
+    grid-gap: 35px;
+>>>>>>> packages section added
     text-align: center;
     margin: auto;
 		width: 1200px;
 		
 		.bouquet {
+<<<<<<< HEAD
 			width: 300px;
 			margin: auto;
 			background-color: #eee;
    		color: $secondaryColor;
+=======
+			position: relative;
+			margin: auto;
+			background-color: #eee;
+			color: $secondaryColor;
+			transition: 0.3s;
+>>>>>>> packages section added
 
 			.bouquet-img {
 				width: 100%;
@@ -242,6 +276,50 @@ a {
 				font-weight: bold;
 				text-transform: capitalize;
 			}
+<<<<<<< HEAD
+=======
+
+			&:hover {
+				transform: scale(1.05);
+				cursor: pointer
+			}
+		}
+		.on-sale::before {
+			content: "SALE";
+			color: #fff;
+			text-align: center;
+			margin-top: auto;
+			padding-top: 10px;
+			letter-spacing: 3px;
+			font-weight: 500;
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 25%;
+			height: 35px;
+			background-color: $primaryColor;
+		}
+	}
+
+	.packages-btn {
+		display: block;
+		margin: 4rem auto 0rem auto;
+		border-radius: 3px;
+		transition: 0.3s;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $primaryColor;
+			
+			a {
+				color: $secondaryColor;
+			}
+		}
+
+		a {
+			letter-spacing: 3px;
+			font-weight: 500;
+>>>>>>> packages section added
 		}
 	}
 }

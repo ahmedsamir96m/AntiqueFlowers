@@ -1,9 +1,14 @@
 @import "config";
+<<<<<<< HEAD
 %btn {
+=======
+.btn {
+>>>>>>> packages section added
   font-size: 22px;
   text-transform: uppercase;
   border: none;
   outline: none;
+<<<<<<< HEAD
 }
 
 .btn-primary {
@@ -11,4 +16,17 @@
   font-weight: 500;
   padding: 15px 30px;
   background-color: $primaryColor;
+=======
+  background: none;
+}
+
+.btn-primary {
+  font-weight: 500;
+  padding: 15px 30px;
+  background-color: $primaryColor;
+}
+
+.btn-outline-light {
+  border: 2px solid $primaryColor;
+>>>>>>> packages section added
 }

@@ -47,6 +47,18 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   }
 }
 
+<<<<<<< HEAD
+=======
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-container {
+  position: relative;
+}
+>>>>>>> packages section added
 
 /* Colors */
 .color-primary {
@@ -62,6 +74,17 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   color: lighten($secondaryColor, 10%);
 }
 
+<<<<<<< HEAD
+=======
+/* bg-colors */
+.bg-primary {
+  background-color: $primaryColor;
+}
+.bg-primary-light {
+  background-color: lighten($primaryColor, 10%);
+}
+
+>>>>>>> packages section added
 
 /* Fonts */
 .font-about {
