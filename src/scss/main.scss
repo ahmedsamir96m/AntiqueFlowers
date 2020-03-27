@@ -6,6 +6,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -42,13 +43,17 @@ a {
 			bottom: 10px;
 
 			.logo-text {
-				font-size: 50px;
+				font-size: 56px;
 				font-weight: 300;
 				text-transform: capitalize;
+
+				@media (max-width: 1400px) {
+					font-size: 42px;
+				}
 			}
 			.logo-subtext {
 				font-family: "Segoe UI";
-				font-size: 12px;
+				font-size: 14px;
 				font-weight: 500;
 				text-transform: uppercase;
 				letter-spacing: 7px;
@@ -56,10 +61,10 @@ a {
 				bottom: -8px;
 			}
 			.sub-right {
-				left: 75px;
+				left: 85px;
 			}
 			.sub-left {
-				left: 12px;
+				left: 8px;
 			}
 		}
 
@@ -80,7 +85,6 @@ a {
 			transform: translate(-50%, -50%);
 
 			.nav-item {
-				font-size: 16px;
 				font-weight: 500;
 				letter-spacing: 6px;
 				padding: 0px 10px;
@@ -116,12 +120,13 @@ a {
 					display: block;
 					position: absolute;
 					right: -5px;
-					top: -5px;
+					top: -3px;
 				}
 			}
 
 			img {
-				width: 24px;
+				width: 22px;
+				height: 24px;
 
 				&:hover {
 					cursor: pointer;
@@ -133,27 +138,57 @@ a {
 
 	#main-section {
 		max-width: 100%;
-    width: 550px;
+    width: 600px;
     position: absolute;
-    top: 45%;
-    left: 15%;
+    top: 35%;
+    left: 10%;
 		
 		.main-section_title {
-			margin-bottom: 25px;
 			font-family: "Happyland Regular";
 			text-transform: initial;
 			font-weight: 400;
-			font-size: 26px;
 		}
 
 		.main-section_sub-title {
-			padding-top: 25px;
 			display: inline-block;
 			font-family: "Segoe UI";
-			font-size: 36px;
+			letter-spacing: 3px;
 		}
 	}
 
+	
+	.scroll-down {
+		position: absolute;
+    top: 96%;
+		left: 50%;
+		cursor: pointer;
+		
+		.scroll-down_text {
+			font-size: 12px;
+			font-weight: 800;
+			letter-spacing: 2px;
+			opacity: 0.5;
+			position: absolute;
+			bottom: 35px;
+			left: -12px;
+		}
+
+		.scroll-down_svg {
+			width: 30px;
+		}
+
+		@media(max-width: 1400px) {
+			.scroll-down {
+				top: 95%;
+			}
+			.scroll-down_text {
+				font-size: 10px;
+			}
+			.scroll-down_svg {
+				width: 24px;
+			}
+		}
+	}
 }
 
 
@@ -174,7 +209,7 @@ a {
 			text-align: center;
 			transition: 0.3s all;
 			&:hover {
-				box-shadow: 0px 2px 19px 1px $secondaryColor;
+				transform: scale(1.05);
 			}
 			&::before {
 				content: "";
@@ -200,6 +235,20 @@ a {
 				font-weight: 700;
 				text-transform: capitalize;
 			}
+			@media(max-width: 1400px) {
+				&::before {
+					left: 57px;
+					width: 65px;
+					height: 65px;
+				}
+				img {
+					width: 85px;
+					height: 85px;
+				}
+				p {
+					font-size: 18px;
+				}
+			}
 		}
 	}
 }
@@ -210,9 +259,7 @@ a {
 	.tags-list {
 		.tag {
 			display: inline-block;
-			font-size: 16px;
 			font-weight: 500;
-			padding: 1rem 2rem;
 			border-radius: 2rem;
 			letter-spacing: 2px;
 			transition: 0.3s;
@@ -292,6 +339,49 @@ a {
 	}
 }
 
+
+
+#contact {
+
+	.contact-us {
+		position: relative;
+
+		.contact-us_bg {
+			width: 100%;
+		}
+		.contact-us_bg--hover {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			opacity: 0.3;
+		}
+
+		.contact-us_text {
+			position: absolute;
+			top: 30%;
+			right: 10%;
+
+			.contact-us_sub-text {
+				font-family: "Merriweather";
+				font-size: 22px;
+				line-height: 1.8;
+				font-weight: 500;
+			}
+		}
+		@media(max-width: 1400px) {
+			.contact-us_text {
+				top: 15%;
+				
+				.contact-us_sub-text {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
 
 
 

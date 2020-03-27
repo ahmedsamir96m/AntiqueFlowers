@@ -5,11 +5,20 @@
   border: none;
   outline: none;
   background: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
 }
 
 .btn-primary {
   font-weight: 500;
-  padding: 15px 30px;
   background-color: $primaryColor;
 }
 

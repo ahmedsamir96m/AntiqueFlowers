@@ -6,10 +6,12 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
     margin: #{$space}rem;
   }
   .my-#{$space} {
-    margin: #{$space}rem 0;
+    margin-top: #{$space}rem;
+    margin-bottom: #{$space}rem;
   }
   .mx-#{$space} {
-    margin: 0 #{$space}rem;
+    margin-left: #{$space}rem;
+    margin-right: #{$space}rem;
   }
   .mt-#{$space} {
     margin-top: #{$space}rem;
@@ -28,10 +30,12 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
     padding: #{$space}rem;
   }
   .py-#{$space} {
-    padding: #{$space}rem 0;
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
   }
   .px-#{$space} {
-    padding: 0 #{$space}rem;
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
   }
   .pt-#{$space} {
     padding-top: #{$space}rem;
@@ -51,10 +55,20 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .container {
   max-width: 1200px;
   margin: auto;
+
+  @media (max-width: 1400px) {
+    max-width: 800px;
+  }
 }
 
 .nav-container {
+  max-width: 1400px;
+  margin: auto;
   position: relative;
+
+  @media (max-width: 1400px) {
+    max-width: 100%;
+  }
 }
 
 /* Colors */
@@ -95,24 +109,43 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 }
 .font-heading {
   font-size: 36px;
-  padding-bottom: 16px;
+
+  @media (max-width: 1400px) {
+    font-size: 26px;
+  }
 }
 .font-sub-heading {
   font-size: 32px;
+
+  @media(max-width: 1400px) {
+    font-size: 28px;
+  }
 }
 .font-normal {
   font-size: 18px;
 }
 .font-up-normal {
-  font-size: 24px;
-}
-.font-normal-plus {
-  font-size: 28px;
+  font-size: 26px;
+
+  @media (max-width: 1400px) {
+    font-size: 22px;
+  }
 }
 .font-sub-normal {
   font-size: 16px;
+
+  @media (max-width: 1400px) {
+    font-size: 14px;
+  }
 }
 
+/* font-weight */
+.font-bold {
+  font-weight: bold;
+}
+.font-thick {
+  font-weight: 700;
+}
 
 /* font-style */
 .font-italic {
@@ -123,6 +156,9 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 /* letter spacing */ 
 .letter-space-5 {
   letter-spacing: 5px;
+}
+.letter-space-3 {
+  letter-spacing: 3px;
 }
 
 
@@ -140,7 +176,8 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 
 /* section spacing */
 .section-padding {
-  padding: 150px 0px;
+  padding-top: 150px;
+  margin-top: 50px;
 }
 
 
