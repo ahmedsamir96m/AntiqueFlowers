@@ -53,7 +53,7 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 
 /* Container */
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 
   @media (max-width: 1400px) {
@@ -83,6 +83,9 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 }
 .color-secondary-light {
   color: lighten($secondaryColor, 10%);
+}
+.color-white {
+  color: #fff;
 }
 
 /* bg-colors */
@@ -138,6 +141,13 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
     font-size: 14px;
   }
 }
+.font-tiny {
+  font-size: 14px;
+
+  @media (max-width: 1400px) {
+    font-size: 12px;
+  }
+}
 
 /* font-weight */
 .font-bold {
@@ -171,6 +181,9 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 /* Align */
 .align-center {
   text-align: center;
+}
+.align-left {
+  text-align: left;
 }
 
 

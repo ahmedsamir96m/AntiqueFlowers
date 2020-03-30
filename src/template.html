@@ -3,6 +3,7 @@
 <head>
 	<title>Antique Flowers</title>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/eea447ece0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -28,8 +29,8 @@
 					<li class="nav-item font-sub-normal"><a class="color-secondary active" href="#">Home</a></li>
 					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#about">About</a></li>
 					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#packages">packages</a></li>
-					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#">contact</a></li>
-					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#">wishlist</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#contact">contact</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#wishlist">wishlist</a></li>
 				</ul>
 	
 				<ul class="nav-functions">
@@ -43,26 +44,28 @@
 			</div>
 		</nav>
 
-		<div id="main-section">
-			<h1 class="main-section_title font-up-normal mb-2">
-				A flower cannot blossom
-				<br>
-				<span class="main-section_sub-title font-heading pt-1">
-					without sunshine, and man <br>cannot live without love .
-				</span>
-			</h1>
+		<main>
+			<div id="main-section">
+				<h1 class="main-section_title font-up-normal mb-2">
+					A flower cannot blossom
+					<br>
+					<span class="main-section_sub-title font-heading pt-1">
+						without sunshine, and man <br>cannot live without love .
+					</span>
+				</h1>
 
-			<button class="contact-now btn btn-primary py-1 px-2">
-				<a class="color-secondary font-segoe p" href="#">
-					contact now
-				</a>
-			</button>
-		</div>
+				<button class="contact-now btn btn-primary py-1 px-2">
+					<a class="color-secondary font-segoe p" href="#">
+						contact now
+					</a>
+				</button>
+			</div>
 
-		<div class="scroll-down">
-			<p class="scroll-down_text font-segoe color-secondary align-center">Scroll<br>Down</p>
-			<img src="./imgs/svg/scrolldown.svg" alt="Scroll Down" class="scroll-down_svg">
-		</div>
+			<div class="scroll-down">
+				<p class="scroll-down_text font-segoe color-secondary align-center">Scroll<br>Down</p>
+				<img src="./imgs/svg/scrolldown.svg" alt="Scroll Down" class="scroll-down_svg">
+			</div>
+		</main>
 
 	</header>
 
@@ -215,25 +218,26 @@
 
 	<!-- Wishlist -->
 
-	<section id="whishlist" class="section-padding">
-		<div class="whishlist-wrapper">
+	<section id="wishlist" class="section-padding">
+		<div class="wishlist-wrapper py-2">
 
-			<div class="wishlist-wrapper_img">
-				<img src="./imgs/newsletter/newsletter.jpg" alt="Subscribe Envelope Image">
+			<div class="wishlist-img">
+				<img src="./imgs/newsletter/newsletter.png" alt="Subscribe Envelope Image">
+				<span class="wishlist-img_border"></span>
 			</div>
 
 			<div class="wishlist-wrapper_subscribe">
-				<div class="">
-					<h1 class="color-secondary font-segeo font-sub-heading font-merriweater letter-space-5">
-						Mark the moment
+				<div class="mb-3">
+					<h1 class="color-secondary font-segeo font-up-normal font-merriweater letter-space-5 align-left">
+						don't miss any update
 					</h1>
 					<p class="font-up-normal font-italic color-secondary font-segeo text-initial">
-						Celebrate your moments with flowers
+						subscribe to our newsletter & get daily news.
 					</p>
 				</div>
 
 				<form id="subscribe-form">
-					<input type="text" name="email" id="subscribe-form_email" placeholder="EMAIL" class="py-1 px-2">
+					<input type="text" name="email" id="" placeholder="EMAIL" class="subscribe-form_email py-1 px-2">
 					<button class="btn btn-primary py-1 px-2 letter-space-5" type="submit">
 						SEND
 					</button>
@@ -242,6 +246,78 @@
 
 		</div>
 	</section>
+
+	<!-- Footer -->
+
+	<footer id="footer" class="main-footer section-padding">
+		<div class="footer-container">
+
+			<div class="footer-links container">
+				<div class="categories footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">categories &roarr;</li>
+						<li><a href="#" target="_blank" title="Home">Home</a></li>
+						<li><a href="#" target="_blank" title="About">about</a></li>
+						<li><a href="#" target="_blank" title="Packages">packages</a></li>
+						<li><a href="#" target="_blank" title="Contact">contact</a></li>
+					</ul>
+				</div>
+				<div class="help footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">Help &roarr;</li>
+						<li><a href="#" target="_blank" title="Customer Service">Customer Service</a></li>
+						<li><a href="#" target="_blank" title="Delievry Service">delivery service</a></li>
+						<li><a href="#" target="_blank" title="Flowers Guides">flower guides</a></li>
+						<li><a href="#" target="_blank" title="Planets Guides">planets guides</a></li>
+					</ul>
+				</div>
+				<div class="contact footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">Contact us &roarr;</li>
+						<li class="text-initial" title="Phone">Phone: 09297562295</li>
+						<li class="text-initial" title="Email">Email: contact@antique.ph</li>
+						<li>We're always here 24hours</li>
+						<li>A day . 7 days a week.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div></div>
+
+			<div class="footer-credits pt-2">
+				<div class="credits-container container">
+
+					<div class="ui-credits font-tiny text-initial">
+						<span>Inspired from</span>
+						<a href="tiny.cc/vyr3lz" class="color-white" target="_blank" title="Antique Flowers On Behance">Antique Flowers</a> UI By:
+						<a href="https://www.behance.net/YaraOmar15" class="color-white" target="_blank" title="Yara Omar On Behance">Yara Omar</a>
+					</div>
+
+					<div class="developer-credits font-tiny text-initial">
+						<span class="">Developed By</span>
+						<a href="https://www.linkedin.com/in/ahmedsamir96m" class="color-white" target="_blank" title="Ahmad Samir on linkedin">Ahmad Samir</a>
+					</div>
+
+					<div class="social-links">
+						<ul>
+							<li class="font-bold font-sub-normal text-initial">Follow me: </li>
+							<li class="font-up-normal"><a href="https://github.com/ahmedsamir96m" class="color-white" target="_blank" title="github">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li class="font-up-normal"><a href="https://www.linkedin.com/in/ahmedsamir96m/" class="color-white" target="_blank" title="linkedin">
+								<i class="fab fa-linkedin"></i>
+							</a></li>
+							<li class="font-up-normal"><a href="https://www.facebook.com/ahmedsamir1996m" class="color-white" target="_blank" title="facebook">
+								<i class="fab fa-facebook"></i>
+							</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
 
 </body>
 </html>

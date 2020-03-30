@@ -1,6 +1,9 @@
 @import 'utlities';
 @import 'buttons';
 @import 'config';
+@import '../fonts/AboutLove/stylesheet.css';
+@import '../fonts/HappyLand/style.css';
+@import '../fonts/Segoe UI/style.css';
 
 
 * {
@@ -13,6 +16,7 @@ body {
 	box-sizing: border-box;
 	font-family: $segoeUI; 
 	text-transform: uppercase;
+	overflow-x: hidden;
 }
 
 ul {
@@ -385,6 +389,109 @@ a {
 
 
 
+#wishlist {
+	margin-top: 0px;
+	
+	.wishlist-wrapper {
+		position: relative;
+		max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    text-align: center;
+
+		.wishlist-img {
+			position: relative;
+
+			img {
+				max-width: 400px;
+				transform: rotate(-10deg);
+			}
+			span {
+				position: absolute;
+				bottom: -60px;
+				left: 135px;
+				width: 330px;
+				height: 330px;
+				border: 15px solid #ee6868;
+				z-index: -1;
+			}
+		}
+		.wishlist-wrapper_subscribe {
+			position: absolute;
+			transform: translate(0%, -50%);
+			top: 50%;
+			left: 55%;
+
+			form {
+
+				.subscribe-form_email {
+					padding: 0.9rem 2rem;
+					font-size: 18px;
+					letter-spacing: 3px;
+					border: 2px solid black;
+				}
+				button {
+					margin-left: -4px;
+				}
+			}
+		}
+	}
+}
+
+#footer {
+
+	.footer-container {
+		background-color: #333;
+    color: #aaa;
+		padding: 2rem 0rem;
+
+		a {
+			transition: 0.1s;
+			&:hover {
+				border-bottom: 1px solid #aaa;
+			}
+		}
+		
+		.footer-links {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			padding-bottom: 2rem;
+
+			ul {
+				li {
+					letter-spacing: 3px;
+					padding: 0.3rem 0;
+
+					a {
+						color: #aaa;
+					}
+				}
+			}
+		}
+
+		.footer-credits {
+			border-top: 1px solid #555;
+			
+			.credits-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.social-links {
+
+					ul {
+						
+						li {
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 
