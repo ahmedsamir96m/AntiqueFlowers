@@ -8,4 +8,16 @@ module.exports = merge(common, {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
   },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader', //3
+          'css-loader', //2
+          'sass-loader', //1
+        ],
+      }
+    ]
+  }  
 });

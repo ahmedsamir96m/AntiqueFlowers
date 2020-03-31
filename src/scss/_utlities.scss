@@ -116,6 +116,12 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   @media (max-width: 1400px) {
     font-size: 26px;
   }
+  @media(max-width: 1080px) {
+    font-size: 22px;
+  }
+  @media(max-width: 768px) {
+    font-size: 18px;
+  }
 }
 .font-sub-heading {
   font-size: 32px;
@@ -123,9 +129,19 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   @media(max-width: 1400px) {
     font-size: 28px;
   }
+  @media(max-width: 1080px) {
+    font-size: 22px;
+  }
 }
 .font-normal {
   font-size: 18px;
+
+  @media (max-width: 1080px) {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 .font-up-normal {
   font-size: 26px;
@@ -133,12 +149,21 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   @media (max-width: 1400px) {
     font-size: 22px;
   }
+  @media (max-width: 1080px) {
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 .font-sub-normal {
   font-size: 16px;
 
   @media (max-width: 1400px) {
     font-size: 14px;
+  }
+  @media (max-width: 1080px) {
+    font-size: 12px;
   }
 }
 .font-tiny {
@@ -191,6 +216,9 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .section-padding {
   padding-top: 150px;
   margin-top: 50px;
+  @media(max-width: 1080px) {
+    margin-top: 0;
+  }
 }
 
 

@@ -39,7 +39,7 @@ a {
 		max-width: 100%;
 		position: relative;
 		padding: 20px 100px;
-
+		/* Logo Styles */
 		.logo {
 			font-family: $aboutLove;
 			display: inline-block;
@@ -50,10 +50,6 @@ a {
 				font-size: 56px;
 				font-weight: 300;
 				text-transform: capitalize;
-
-				@media (max-width: 1400px) {
-					font-size: 42px;
-				}
 			}
 			.logo-subtext {
 				font-family: "Segoe UI";
@@ -70,6 +66,26 @@ a {
 			.sub-left {
 				left: 8px;
 			}
+			/*Media Queries For Logo */
+			@media (max-width: 1400px) {
+				.logo-text {
+					font-size: 42px;
+				}
+			}
+			@media (max-width: 768px) {
+				.logo-text {
+					font-size: 36px;
+				}
+				.logo-subtext {
+					font-size: 10px;
+				}
+				.sub-left {
+					left: 10px
+				}
+				.sub-right {
+					left: 54px
+				}
+			}
 		}
 
 		ul {
@@ -80,13 +96,14 @@ a {
 			}
 			
 		}
-
+		/* Navigation Links */
 		.nav-links {
 			width: 100%;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+			transition: 0.5s;
 
 			.nav-item {
 				font-weight: 500;
@@ -104,6 +121,28 @@ a {
 					color: $primaryColor;
 				}
 			}
+			@media (max-width: 1080px) {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				margin-top: 150px;
+				background: #fff;
+				width: 100vw;
+				padding: 2rem;
+				z-index: 10;
+				transform: translate(150%, -50%);
+				transition: 0.7s;
+				
+				.nav-item {
+					padding: 10px 10px;
+				}
+
+			}
+		}
+
+		.nav-links.nav-links-mobile {
+			transform: translate(-50%, -50%);
+			transition: 0.7s;
 		}
 
 		.nav-functions {
@@ -136,9 +175,74 @@ a {
 					cursor: pointer;
 				}
 			}
+			/* Media Queries For Nav Functions (Searching, Shoppingcart) */
+			@media(max-width: 1080px) {
+				right: 47%;
+    		transform: translate(50%, -50%);
+			}
+		}
+
+		/* Nav Toggle */
+		.nav-toggle-btn {
+			position: absolute;
+			top: 50%;
+			right: 50px;
+			width: 40px;
+			height: 40px;
+			transform: translateY(-50%);
+			border: none;
+			background: none;
+			outline: none;
+			cursor: pointer;
+			transition: 0.3s;
+
+			.nav-toggle-btn_bar {
+				position: absolute;
+				width: 100%;
+				height: 6px;
+				background: $primaryColor;
+				display: block;
+				border-radius: 3px;
+				transition: 0.3s;
+
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					width: 40px;
+					height: 6px;
+					background: $primaryColor;
+					border-radius: 3px;
+					transition: 0.3s;
+				}
+				&::before {
+					top: -10px;
+				}
+				&::after {
+					bottom: -10px;
+				}
+			}
+		}
+		/* Media Queries For Main Nav */
+		@media (max-width: 1080px) {
+			padding: 20px 50px;
 		}
 	}
 
+	.nav-toggle-btn.toggled {
+		.nav-toggle-btn_bar {	
+			transform: translateX(-40px);
+			background: transparent;
+			pointer-events: none;
+			&::before {
+				transform: rotate(45deg) translate(45px, -30px);
+			}
+			&::after {
+				transform: rotate(-45deg) translate(45px, 30px);
+			}
+		}
+	}
 
 	#main-section {
 		max-width: 100%;
@@ -157,6 +261,10 @@ a {
 			display: inline-block;
 			font-family: "Segoe UI";
 			letter-spacing: 3px;
+		}
+		/* Media Queries For Main Secion */
+		@media(max-width: 1080px) {
+			left: 5%;
 		}
 	}
 
@@ -253,6 +361,24 @@ a {
 					font-size: 18px;
 				}
 			}
+			@media(max-width: 768px) {
+				flex-basis: auto;
+				margin: 0px;
+
+				&::before {
+					left: 23px;
+				}
+				p {
+					font-size: 14px;
+					letter-spacing: 3px;
+				}
+			}
+		}
+		@media(max-width: 768px) {
+			flex-direction: column;
+			.about-item:nth-child(3)::before {
+				left: 38px;
+			}
 		}
 	}
 }
@@ -271,6 +397,12 @@ a {
 		}
 		.active {
 			background-color: $primaryColor;
+		}
+		@media(max-width: 1080px) {
+			.tag {
+				padding: 0.5rem 1rem;
+				letter-spacing: 1px;
+			}
 		}
 	}
 
@@ -318,6 +450,20 @@ a {
 			width: 25%;
 			height: 35px;
 			background-color: $primaryColor;
+		}
+
+		@media(max-width: 1080px) {
+			width: auto;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media(max-width: 768px) {
+			.bouquet {
+				margin: 0 2rem;
+			}
+		}
+		@media(max-width: 580px) {
+			margin: 0rem 3rem;
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 
@@ -384,6 +530,20 @@ a {
 				}
 			}
 		}
+		@media(max-width: 768px) {
+			img {
+				min-height: 200px;
+			}
+			.contact-us_text {
+				h1 {
+					font-size: 16px;
+				}
+				.contact-us_sub-text {
+					font-size: 14px;
+					margin-bottom: 1rem;
+				}
+			}
+		}
 	}
 }
 
@@ -391,6 +551,7 @@ a {
 
 #wishlist {
 	margin-top: 0px;
+	min-height: 200px;
 	
 	.wishlist-wrapper {
 		position: relative;
@@ -417,6 +578,9 @@ a {
 				border: 15px solid #ee6868;
 				z-index: -1;
 			}
+			@media(max-width: 1080px) {
+				display: none;
+			}
 		}
 		.wishlist-wrapper_subscribe {
 			position: absolute;
@@ -434,6 +598,21 @@ a {
 				}
 				button {
 					margin-left: -4px;
+					@media(max-width: 1080px) {
+						margin-left: 0px;
+						margin-top: auto;
+						padding: 1rem 2rem;
+					}
+				}
+			}
+			@media(max-width: 1080px) {
+				position: absolute;
+				transform: none;
+				top: 0;
+				left: 0%;
+				width: 100%;
+				h1 {
+					text-align: center;
 				}
 			}
 		}
@@ -455,9 +634,10 @@ a {
 		}
 		
 		.footer-links {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			padding-bottom: 2rem;
+			display: flex;
+			padding: 0 2rem 2rem 2rem;
+			align-content: center;
+			justify-content: space-between;
 
 			ul {
 				li {
@@ -469,6 +649,14 @@ a {
 					}
 				}
 			}
+			@media(max-width: 768px) {
+				flex-direction: column;
+
+				.footer-links_ul-container {
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+			}
 		}
 
 		.footer-credits {
@@ -477,7 +665,7 @@ a {
 			.credits-container {
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
+				justify-content: space-evenly;
 
 				.social-links {
 
@@ -487,6 +675,9 @@ a {
 							display: inline-block;
 						}
 					}
+				}
+				@media(max-width: 768px) {
+					flex-direction: column;
 				}
 			}
 		}
