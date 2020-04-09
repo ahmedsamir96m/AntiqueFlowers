@@ -1,5 +1,29 @@
 @import "config";
-/* margins & paddings */
+
+/* Tags */
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: $segoeUI; 
+	text-transform: uppercase;
+	overflow-x: hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* basic margins & paddings from 1rem to 6rem */
 $spaceamounts: (1, 2, 3, 4, 5, 6);
 @each $space in $spaceamounts {
   .m-#{$space} {
@@ -51,7 +75,11 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   }
 }
 
-/* Container */
+.m-auto {
+  margin: auto;
+};
+
+/* Containers */
 .container {
   max-width: 1400px;
   margin: auto;
@@ -60,10 +88,10 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
     max-width: 800px;
   }
 }
-
 .nav-container {
-  max-width: 1400px;
   margin: auto;
+  height: 100%;
+  padding: 0px 50px;
   position: relative;
 
   @media (max-width: 1400px) {
@@ -199,7 +227,7 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 
 /* Text */
 .text-initial {
-  text-transform: initial;
+  text-transform: initial !important;
 }
 
 
@@ -222,8 +250,25 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 }
 
 
+/* Display */
+.display-none {
+  display: none !important;
+}
+.display-block {
+  display: block !important;
+}
+.display-none {
+  display: none !important;
+}
+
+/* others */
 .service-icon-size {
   width: 107px;
   height: 107px;
+}
+
+.required-input::after {
+  content: "*";
+  color: $primaryColor;
 }
 

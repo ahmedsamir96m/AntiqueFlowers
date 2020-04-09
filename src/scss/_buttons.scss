@@ -8,10 +8,6 @@
   cursor: pointer;
   transition: 0.3s;
 
-  &:hover {
-    transform: scale(1.05);
-  }
-
   @media (max-width: 1400px) {
     font-size: 18px;
   }
@@ -24,8 +20,23 @@
 .btn-primary {
   font-weight: 500;
   background-color: $primaryColor;
-}
 
+  &:hover {
+    background-color: lighten($primaryColor, 5%);
+  }
+}
 .btn-outline-light {
   border: 2px solid $primaryColor;
+
+  &:hover {
+    background-color: lighten($primaryColor, 5%);
+  }
+}
+.btn-remove {
+  color: #fff;
+  padding: 3px 5px 1px 6px;
+  background-color: $primaryColor;
+}
+.btn-form {
+  padding: 0.5rem 1rem;
 }
