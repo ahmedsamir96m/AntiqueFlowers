@@ -1,2 +1,7 @@
 node_modules
-dist
+src
+package-lock.json
+package.json
+webpack.common.js
+webpack.dev.js
+webpack.prod.js
