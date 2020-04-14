@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/eea447ece0.js" crossorigin="anonymous"></script>
+  <title>Antique Flowers - Flowers Store</title>
+</head>
+<body>
+  <header id="main-header" class="color-secondary">
+
+		<img src="./imgs/home-bg.jpg" alt="" class="landpageImg">
+
+		<nav class="main-nav">
+			<div class="nav-container">
+				<!-- Logo -->
+				<a class="logo color-secondary" href="#" title="logo"> 
+					<h1 class="logo-text">
+						Antique
+					</h1>
+					<span class="logo-subtext sub-left">
+						Flow
+					</span>
+					<span class="logo-subtext sub-right">
+						ers
+					</span>
+				</a>
+				<!-- Navigation Links -->
+				<ul class="nav-links align-center"> 
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#">Home</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#about">About</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#packages">packages</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#contact">contact</a></li>
+					<li class="nav-item font-sub-normal"><a class="color-secondary" href="#wishlist">wishlist</a></li>
+				</ul>
+				<!-- Navigation Assests (Shopping Cart & Search) -->
+				<ul class="nav-functions">
+					<li class="search">
+						<img src="./imgs/svg/loupe.svg" alt="Search" title="Search">
+					</li>
+					<li class="shopping-cart" data-itemsInCart="0" title="Shopping-cart">
+						<img src="./imgs/svg/shopping-cart.svg" alt="Shopping Cart">
+					</li>
+				</ul>
+				<div id="shoppingCartHolder" class="text-initial align-center" title="shopping-cart items">
+					<hr class="shoppingCart-hr">
+					<span class="shoppingCart-total color-primary display-block m-1">Total: <span>$0</span> </span>
+					<a href="#" target="_blank" class="shoppingCart-btn btn btn-primary color-white display-block m-auto align-center text-initial">Go to cart</a>
+				</div>
+			</div>
+			<!-- Navigation Toggle Button -->
+			<button class="nav-toggle-btn">
+				<span class="nav-toggle-btn_bar"></span>
+			</button>
+		</nav>
+		<!-- Main Section Of The website -->
+		<main>
+			<div id="main-section">
+				<h1 class="main-section_title font-up-normal mb-2">
+					A flower cannot blossom
+					<br>
+					<span class="main-section_sub-title font-heading pt-1">
+						without sunshine, and man <br>cannot live without love .
+					</span>
+				</h1>
+
+				<button class="contact-now btn btn-primary py-1 px-2">
+					<a class="color-secondary font-segoe p" href="#contactForm">
+						contact now
+					</a>
+				</button>
+			</div>
+
+			<a class="scroll-down" href="#about">
+				<p class="scroll-down_text font-segoe color-secondary align-center">Scroll<br>Down</p>
+				<img src="./imgs/svg/scrolldown.svg" alt="Scroll Down" class="scroll-down_svg">
+			</a>
+  </main>
+
+</header>
+  
+<!-- About (Services) Section -->
+
+<section id="about" class="section-padding">
+  <!-- About Section Titles -->
+  <div class="conatiner align-center mb-5">
+    <p class="font-normal font-happyland color-primary text-initial">
+      What We Offer
+    </p>
+    <h1 class="color-secondary font-segeo font-sub-heading font-merriweater letter-space-5">
+      you are in a good hands
+    </h1>
+    <p class="font-up-normal font-italic color-secondary font-segeo text-initial">
+      Check out the services we provide!
+    </p>
+  </div>
+  <!-- Services we provide -->
+  <div class="container container-flex">
+    <div class="about-item">
+      <img class="service-icon-size" src="./imgs/services/call-center.svg" alt="Customer Center">
+      <p class="color-secondary">Customer <br>Service</p>
+    </div>
+    <div class="about-item">
+      <img class="service-icon-size" src="./imgs/services/Outline.svg" alt="Special Bouquets">
+      <p class="color-secondary">Special <br>Bouquets</p>
+    </div>
+    <div class="about-item">
+      <img class="service-icon-size" src="./imgs/services/gift.svg" alt="Professional Packing">
+      <p class="color-secondary">Professional <br>Packing</p>
+    </div>
+    <div class="about-item">
+      <img class="service-icon-size" src="./imgs/services/motorcycle.svg" alt="Delievry Service">
+      <p class="color-secondary">Delievry <br>Service</p>
+    </div>
+  </div>
+
+</section>
+
+
+	<!-- Packages (Products) Section -->
+
+	<section id="packages" class="section-padding">
+		<!-- Packages Section Titles -->
+		<div class="align-center mb-5">
+			<p class="font-normal font-happyland color-primary text-initial">
+				Choose Bouquets Now
+			</p>
+			<h1 class="color-secondary font-segeo font-sub-heading font-merriweater letter-space-5">
+				Mark the moment
+			</h1>
+			<p class="font-up-normal font-italic color-secondary font-segeo text-initial">
+				Celebrate your moments with flowers
+			</p>
+		</div>
+		<!-- Our Packages Tags -->
+		<div class="tags mt-5 mb-4">
+			<ul class="tags-list color-secondary align-center">
+				<li class="all-results tag font-sub-normal py-1 px-2 active">All Results</li>
+				<li class="mothers-day tag font-sub-normal py-1 px-2">Mother's day</li>
+				<li class="valentines-day tag font-sub-normal py-1 px-2">Valentine's day</li>
+				<li class="weddings-bouquets tag font-sub-normal py-1 px-2">Weddings bouquets</li>
+			</ul>
+		</div>
+		<!-- Our Packages -->
+		<!-- Here I could have render them through javascript using data that stored in other file,
+		but i did that with the shopping cart so i decided to take different approach here -->
+		<div class="bouquets container">
+			<!-- Product 1 --> 
+			<div class="valentines-day all-results bouquet">
+				<img src="./imgs/products/product1.png" alt="Dosie Bouquet" class="bouquet-img">
+				<button class="add-to-cart btn py-2" data-num="0">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Dosie Bouquet
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$22.99</span>
+				</div>
+			</div>
+			<!-- Product 2 --> 
+			<div class="mothers-day all-results bouquet on-sale">
+				<img src="./imgs/products/product2.png" alt="Baraen Bouquet" class="bouquet-img">
+				<button class="add-to-cart btn py-2 text-initial" data-num="1">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Baraen Bouquet
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$19.90</span>
+				</div>
+			</div>
+			<!-- Product 3 -->
+			<div class="weddings-bouquets all-results bouquet">
+				<img src="./imgs/products/product3.png" alt="Dried Flowers" class="bouquet-img">
+				<button class="add-to-cart btn py-2 text-initial" data-num="2">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Dried Flowers
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$21.90</span>
+				</div>
+			</div>
+			<!-- Product 4 -->
+			<div class="weddings-bouquets all-results bouquet">
+				<img src="./imgs/products/product4.png" alt="Dried Flowers" class="bouquet-img">
+				<button class="add-to-cart btn py-2 text-initial" data-num="3">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Dried Flowers
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$10.50</span>
+				</div>
+			</div>
+			<!-- Product 5 -->
+			<div class="mothers-day all-results bouquet">
+				<img src="./imgs/products/product5.png" alt="Mother's Day Bouquet" class="bouquet-img">
+				<button class="add-to-cart btn py-2 text-initial" data-num="4">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Mother'sDay Bouquet
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$21.90</span>
+				</div>
+			</div>
+			<!-- Product 6 -->
+			<div class="valentines-day all-results bouquet on-sale">
+				<img src="./imgs/products/product6.png" alt="Dried Flowers" class="bouquet-img">
+				<button class="add-to-cart btn py-2 text-initial" data-num="5">
+					<i class="fas fa-shopping-cart"></i>
+				</button>
+				<div class="bouquet-description font-merriweater py-1">
+					<p class="bouquet-title color-secondary mb-1">
+						Dried Flowers
+					</p>
+					<span class="font-segoe bouquet-price font-up-normal color-primary">$13.50</span>
+				</div>
+			</div>
+
+		</div>
+		<!-- Incase theres some data that stored in external API this button should re-assing the location 
+		to different html page where all the products are displayed -->
+		<button class="packages-btn btn btn-outline-light color-primary-light py-1 px-2">
+			<a href="#" class="color-primary">See More</a>
+		</button>
+
+  </section>
+  
+	<!-- Contact Us Section -->
+
+	<section id="contact" class="section-padding">
+		<div class="contact-us">
+			<img src="./imgs/contact.png" alt="Contact Us Background" class="contact-us_bg">
+			<div class="contact-us_bg--hover"></div>
+			<div class="contact-us_text align-center">
+				<h1 class="color-secondary font-segeo font-sub-heading font-merriweater letter-space-5 mb-1">
+					contact us
+				</h1>
+				<p class="contact-us_sub-text letter-space-3 mb-2">
+					and order your<br>special bouquet now
+				</p>
+				<button class="btn btn-primary py-1 px-2">
+					<a href="#contactForm" class="color-secondary font-segoe"> 
+						contact us
+					</a>
+				</button>
+			</div>
+		</div>
+	</section>
+
+  	<!-- Contact Us Form -->
+	<section id=contactForm class="">
+		<form id="contactUs" enctype="multipart/form-data" method="GET">
+			<!-- Full Name -->
+      <div class="full-name mb-1">
+        <label class="required-input pr-1" for="fullName" class="text-initial mr-1">Full Name:</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+			</div>
+			<!-- Telephone -->
+      <div class="telephone mb-1">
+        <label class="required-input pr-1" for="telephone" class="text-initial mr-1">Telephone:</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="Telephone">
+			</div>
+			<!-- Email -->
+      <div class="email mb-1 ml-2">
+        <label class="required-input pr-1" for="email" class="text-initial mr-1">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+			</div>
+			<!-- Inqueries -->
+      <div class="inquery mb-1">
+        <label class="required-input pr-1" for="inquery" class="text-initial mr-1">Inquery About:</label>
+        <select name="inquery" id="inquery" required>
+          <option value="selectSomething">Select something!</option>
+          <option value="flowers">Flowers</option>
+          <option value="bouquets">Bouquets</option>
+          <option value="services">Services</option>
+          <option value="somethingElse">Something else</option>
+        </select>
+			</div>
+      <div class="inquery-explanation mb-1">
+        <textarea class="font-segoe" name="inqueryExplanation" id="inqueryExplanation" cols="40" rows="6" placeholder="Explain your inquery in more details!"></textarea>
+			</div>
+			<!-- Control Buttons (Form Submit & Reset) -->
+			<div class="form-buts">
+				<button class="btn btn-form btn-primary" type="reset">Reset</button>
+				<button class="btn btn-form btn-primary" type="submit">Submit</button>
+			</div>
+
+    </form>
+  </section>
+
+  <!-- Wishlist -->
+
+	<section id="wishlist" class="section-padding">
+		<div class="wishlist-wrapper py-2">
+			<!-- Wishlist Image -->
+			<div class="wishlist-img">
+				<img src="./imgs/newsletter/newsletter.png" alt="Subscribe Envelope Image">
+				<span class="wishlist-img_border"></span>
+			</div>
+			<!-- Wishlist Subscribe Text -->
+			<div class="wishlist-wrapper_subscribe">
+				<div class="mb-3">
+					<h1 class="color-secondary font-segeo font-up-normal font-merriweater letter-space-5 align-left">
+						don't miss any update
+					</h1>
+					<p class="font-up-normal font-italic color-secondary font-segeo text-initial">
+						subscribe to our newsletter & get daily news.
+					</p>
+				</div>
+				<!-- Wishlist form (Email & Submit Button) -->
+				<form id="subscribe-form">
+					<input type="email" required name="email" id="" placeholder="EMAIL" class="subscribe-form_email py-1 px-2">
+					<button class="btn btn-primary py-1 px-2 letter-space-5 subscribe-form__btn" type="submit">
+						SEND
+					</button>
+				</form>
+			</div>
+
+		</div>
+  </section>
+  
+  <!-- Footer -->
+
+	<footer id="footer" class="main-footer section-padding">
+		<div class="footer-container">
+			<!-- Footer Quick Links -->
+			<div class="footer-links container">
+				<!-- Categories Quick Links -->
+				<div class="categories footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">categories &roarr;</li>
+						<li><a href="#" target="_blank" title="Home">Home</a></li>
+						<li><a href="#" target="_blank" title="About">about</a></li>
+						<li><a href="#" target="_blank" title="Packages">packages</a></li>
+						<li><a href="#" target="_blank" title="Contact">contact</a></li>
+					</ul>
+				</div>
+				<!-- Help Services Quick Links -->
+				<div class="help footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">Help &roarr;</li>
+						<li><a href="#" target="_blank" title="Customer Service">Customer Service</a></li>
+						<li><a href="#" target="_blank" title="Delievry Service">delivery service</a></li>
+						<li><a href="#" target="_blank" title="Flowers Guides">flower guides</a></li>
+						<li><a href="#" target="_blank" title="Planets Guides">planets guides</a></li>
+					</ul>
+				</div>
+				<!-- Contact Us Quick Links -->
+				<div class="contact footer-links_ul-container">
+					<ul class="">
+						<li class="font-bold">Contact us &roarr;</li>
+						<li class="text-initial" title="Phone"><i class="fas fa-phone-alt"></i>: 09297562295</li>
+						<li class="text-initial" title="Email"><i class="fas fa-envelope"></i>: contact@antique.ph</li>
+						<li>We're always here 24hours</li>
+						<li>A day . 7 days a week.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div></div>
+			<!-- Footer Credits -->
+			<div class="footer-credits pt-2">
+				<div class="credits-container container">
+					<!-- Designer Credits -->
+					<div class="ui-credits font-tiny text-initial">
+						<span>Inspired from</span>
+						<a href="tiny.cc/vyr3lz" class="color-white" target="_blank" title="Antique Flowers On Behance">Antique Flowers</a> UI By:
+						<a href="https://www.behance.net/YaraOmar15" class="color-white" target="_blank" title="Yara Omar On Behance">Yara Omar</a>
+					</div>
+					<!-- Developer Credits -->
+					<div class="developer-credits font-tiny text-initial">
+						<span class="">Developed By</span>
+						<a href="https://www.linkedin.com/in/ahmedsamir96m" class="color-white" target="_blank" title="Ahmad Samir on linkedin">Ahmad Samir</a>
+					</div>
+					<!-- Social Links -->
+					<div class="social-links">
+						<ul>
+							<li class="font-bold font-sub-normal text-initial">Follow me: </li>
+							<li class="font-up-normal"><a href="https://github.com/ahmedsamir96m" class="color-white" target="_blank" title="github">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li class="font-up-normal"><a href="https://www.linkedin.com/in/ahmedsamir96m/" class="color-white" target="_blank" title="linkedin">
+								<i class="fab fa-linkedin"></i>
+							</a></li>
+							<li class="font-up-normal"><a href="https://www.facebook.com/ahmedsamir1996m" class="color-white" target="_blank" title="facebook">
+								<i class="fab fa-facebook"></i>
+							</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
