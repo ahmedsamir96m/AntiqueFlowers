@@ -11,7 +11,8 @@ body {
 	box-sizing: border-box;
 	font-family: $segoeUI; 
 	text-transform: uppercase;
-	overflow-x: hidden;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ul {
@@ -84,7 +85,7 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   max-width: 1400px;
   margin: auto;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     max-width: 800px;
   }
 }
@@ -94,7 +95,7 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
   padding: 0px 50px;
   position: relative;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     max-width: 100%;
   }
 }
@@ -141,63 +142,63 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .font-heading {
   font-size: 36px;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     font-size: 26px;
   }
-  @media(max-width: 1080px) {
+  @media screen and(max-width: 1080px) {
     font-size: 22px;
   }
-  @media(max-width: 768px) {
+  @media screen and(max-width: 768px) {
     font-size: 18px;
   }
 }
 .font-sub-heading {
   font-size: 32px;
 
-  @media(max-width: 1400px) {
+  @media screen and(max-width: 1400px) {
     font-size: 28px;
   }
-  @media(max-width: 1080px) {
+  @media screen and(max-width: 1080px) {
     font-size: 22px;
   }
 }
 .font-normal {
   font-size: 18px;
 
-  @media (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
     font-size: 16px;
   }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 }
 .font-up-normal {
   font-size: 26px;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     font-size: 22px;
   }
-  @media (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
     font-size: 18px;
   }
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 16px;
   }
 }
 .font-sub-normal {
   font-size: 16px;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     font-size: 14px;
   }
-  @media (max-width: 1080px) {
+  @media screen and (max-width: 1080px) {
     font-size: 12px;
   }
 }
 .font-tiny {
   font-size: 14px;
 
-  @media (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     font-size: 12px;
   }
 }
@@ -244,7 +245,7 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .section-padding {
   padding-top: 150px;
   margin-top: 50px;
-  @media(max-width: 1080px) {
+  @media screen and(max-width: 1080px) {
     margin-top: 0;
   }
 }
@@ -257,8 +258,8 @@ $spaceamounts: (1, 2, 3, 4, 5, 6);
 .display-block {
   display: block !important;
 }
-.display-none {
-  display: none !important;
+.display-flex {
+  display: flex !important;
 }
 
 /* others */

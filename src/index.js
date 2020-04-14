@@ -32,6 +32,18 @@ navToggle.addEventListener('click', (e) => {
 });
 
 
+// Change nav bar position do be fixed when user scroll
+window.addEventListener('scroll', event => {
+  const navBar = document.querySelector('.main-nav');
+  if(window.scrollY > navBar.clientHeight) {
+    navBar.classList.add('nav-scrolled');
+  } else {
+    navBar.classList.remove('nav-scrolled');
+  }
+});
+
+
+
 // change the display property of the shopping cart container if its clicked 
 const navShoppingCart = document.querySelector('.shopping-cart img');
 const shoppingCartHolder = document.getElementById('shoppingCartHolder');
@@ -77,17 +89,6 @@ contactForm.addEventListener('submit', event => {
 
   if(inquery.value === "selectSomething"){
     alert('Please select an inquery!')
-  }
-});
-
-
-// Change nav bar position do be fixed when user scroll
-window.addEventListener('scroll', event => {
-  const navBar = document.querySelector('.main-nav');
-  if(window.scrollY > navBar.scrollHeight) {
-    navBar.classList.add('nav-scrolled');
-  } else {
-    navBar.classList.remove('nav-scrolled');
   }
 });
 
